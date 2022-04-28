@@ -72,6 +72,9 @@ hr.substyle{
     color: rgb(36, 34, 34);
     font-size: 40px;
 }
+.material-icons#left:hover,#right:hover{
+    scale:1.1;
+}
 button{
     border: none;
     background-color:  rgb(99, 239, 193);
@@ -82,5 +85,8 @@ button{
     margin-bottom: -8px;
 }
 button:hover{
-    background-color:  rgb(99, 213, 239);
+    background-color:  rgb(142, 246, 212);
+    scale:1.03;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.374);
+}
 }
