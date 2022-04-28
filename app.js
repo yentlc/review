@@ -29,6 +29,7 @@ let people = [
 ];
 const leftBtn = document.querySelector('#left');
 const rightBtn = document.querySelector('#right');
+const surpriseBtn = document.querySelector('#surprisebtn');
 let img = document.querySelector('#profile-picture');
 let name = document.querySelector('#name');
 let work = document.querySelector('#work');
@@ -54,6 +55,16 @@ rightBtn.addEventListener('click', () => {
   if (current === people.length) {
     current = 0;
   }
+  img.setAttribute('src', people[current].img);
+  name.innerText = people[current].name;
+  work.innerText = people[current].work;
+  review.innerText = people[current].review;
+  console.log(current);
+  current++;
+});
+
+surpriseBtn.addEventListener('click', () => {
+  current = Math.floor(Math.random() * (people.length - 1));
   img.setAttribute('src', people[current].img);
   name.innerText = people[current].name;
   work.innerText = people[current].work;
