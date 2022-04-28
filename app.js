@@ -34,8 +34,7 @@ let name = document.querySelector('#name');
 let work = document.querySelector('#work');
 let review = document.querySelector('#review');
 
-let count = 0;
-let current = people.length - 1;
+let current = 0;
 
 leftBtn.addEventListener('click', () => {
   console.log(current);
@@ -52,13 +51,13 @@ leftBtn.addEventListener('click', () => {
 });
 
 rightBtn.addEventListener('click', () => {
-  if (count === people.length) {
-    count = 0;
+  if (current === people.length) {
+    current = 0;
   }
-  img.setAttribute('src', people[count].img);
-  name.innerText = people[count].name;
-  work.innerText = people[count].work;
-  review.innerText = people[count].review;
-  console.log(count);
-  count++;
+  img.setAttribute('src', people[current].img);
+  name.innerText = people[current].name;
+  work.innerText = people[current].work;
+  review.innerText = people[current].review;
+  console.log(current);
+  current++;
 });
