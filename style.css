@@ -8,28 +8,54 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .title{
     font-size: 50px;
-    margin-bottom: 0px;
     font-weight: 500;
-    background-color:white;
 }
-#substyle{
-    background-color: rgb(131, 253, 196);
-    margin: 10px;
+hr.substyle{
+    border: none;
+    height: 5px;
+    color: rgb(131, 253, 196);
     width: 70px;
-    height: 4px;
-    border-radius: 2px;
+    
 }
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 800px;
     max-width: 600px;
     margin: 20px;
     padding:  60px 20px;
     background-color:white;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.553);
+}
+.picture{
+    max-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+#quote{
+    background-color: rgb(136, 238, 204);
+    padding: 15px;
+    font-size: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-bottom: -57px;
+    margin-left: -220px;
+}
+#profile-picture{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 50%;
+    box-shadow: 15px -5px rgb(136, 238, 204);
 }
